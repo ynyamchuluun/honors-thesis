@@ -1,0 +1,4 @@
+subsample,observed_chi2,bootstrap_95th_percentile,bootstrap_p_value,decision
+Full Sample,19.45368020721365,23.080351845805545,0.069,Do not reject the null hypothesis
+Boom,58.08548364587671,15.524809949965393,0.0,Reject the null hypothesis
+Slump,17.552217723127466,25.0710019269541,0.099,Do not reject the null hypothesis
