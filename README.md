@@ -55,4 +55,4 @@ All results are automatically exported to
 ### Yesui Nyamchuluun advised by Prof. Hannes Malmberg
 yesui.nyamchuluun@gmail.com
 
-University of Minnesota — Department of Economics, Class of 2025. 
+University of Minnesota, Department of Economics, Class of 2025. 
