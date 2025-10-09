@@ -20,9 +20,10 @@ It introduces an **ARIMA-based bootstrap** procedure to evaluate finite-sample i
 
 ### 3. Instrumented Local Projections (IV–LP)  
 - Estimates:
-  \[
+$$\[
   \Delta_h y_{i,t+h} = \alpha_i + \beta_h \text{dCAPB}_{i,t} + X'_{i,t}\gamma_h + \varepsilon_{i,t+h}
   \]
+  $$
   using **2SLS** regressions instrumenting *dCAPB* with within-country demeaned *size*.  
 - Includes controls (_x₁–x₆_) consistent with the baseline JST specification.
 
