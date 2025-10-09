@@ -21,7 +21,9 @@ It introduces an **ARIMA-based bootstrap** procedure to evaluate finite-sample i
 ### 3. Instrumented Local Projections (IV–LP)
 
 The estimated regression takes the form:
-
+<p align="center">
+  <img src="images/equation_ivlp.png" alt="IV–LP equation: Δ_h y_{i,t+h} = α_i + β_h dCAPB_{i,t} + X'_{i,t} γ_h + ε_{i,t+h}" width="650"/>
+</p>
   using **2SLS** regressions instrumenting *dCAPB* with within-country demeaned *size*.  
 - Includes controls (_x₁–x₆_) consistent with the baseline JST specification.
 
