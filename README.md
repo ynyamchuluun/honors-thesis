@@ -43,9 +43,9 @@ $$
 
 | Subsample       | Observed χ² | Bootstrap 95th Percentile | Bootstrap p-value | Decision             |
 |------------------|-------------|----------------------------|-------------------|----------------------|
-| Full Sample      | 19.454      | 23.080                     | 0.069             | Do not reject H₀     |
-| Boom             | 58.085      | 15.524                     | 0.000             | Reject H₀            |
-| Slump            | 17.552      | 25.071                     | 0.099             | Do not reject H₀     |
+| Full Sample      | 19.454      | 23.080                     | 0.069*            | Do not reject H₀     |
+| Boom             | 58.085      | 15.524                     | 0.000***          | Reject H₀            |
+| Slump            | 17.552      | 25.071                     | 0.099*            | Do not reject H₀     |
 
 All results are automatically exported to  
 `output/bootstrap_joint_chi2_summary.csv`.
