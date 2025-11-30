@@ -36,11 +36,11 @@ The estimated regression takes the form:
 
 ## Key Outputs
 
-| Subsample       | Observed χ² | Bootstrap 95th Percentile | Bootstrap p-value | Decision             |
-|------------------|-------------|----------------------------|-------------------|----------------------|
-| Full Sample      | 19.454      | 23.080                     | 0.069*            | Do not reject H₀     |
-| Boom             | 58.085      | 15.524                     | 0.000***          | Reject H₀            |
-| Slump            | 17.552      | 25.071                     | 0.099*            | Do not reject H₀     |
+| Subsample       | Observed χ² | Standard χ² (95%) for df = 5 | Bootstrap 95th Percentile | Bootstrap p-value | Decision             |
+|------------------|-------------|--------------------|----------------------------|-------------------|----------------------|
+| Full Sample      | 19.454      | 11.070             | 23.080                     | 0.069*            | Do not reject H₀     |
+| Boom             | 58.085      | 11.070             | 15.524                     | 0.000***          | Reject H₀            |
+| Slump            | 17.552      | 11.070             | 25.071                     | 0.099*            | Do not reject H₀     |
 
 All results are automatically exported to  
 `output/bootstrap_joint_chi2_summary.csv`.
