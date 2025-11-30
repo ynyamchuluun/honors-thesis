@@ -49,32 +49,15 @@ All results are automatically exported to
 
 ## How to Replicate the Results
 
-1. **Clone the repo and enter the folder**
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
-Set up Python and install dependencies
-Create a virtual environment (optional) and install the required libraries:
+1. Set up a Python environment and install the packages used in the scripts inside the `computation` folder.
 
-2. **Make sure the input data are in place**
-Check that the following files are in the input/ directory:
+2. Make sure all input data files (`JSTdatasetR6.dta`, `dcapb.dta`, `fiscal_consolidation_v032023.dta`, and `iv_data_corrected.csv`) are located in the `input` directory.
 
-JSTdatasetR6.dta
+3. First, run `replicate_jorda_taylor_IVLP.py` (in `computation/`) to reproduce the baseline Jordà–Schularick–Taylor IV–Local Projection results and the replicated impulse response figure.
 
-dcapb.dta
+4. Next, run `arima_sanity_and_selection.py` to choose and check the ARIMA specification used for the bootstrap procedure.
 
-fiscal_consolidation_v032023.dta
-
-iv_data_corrected.csv
-
-3. **Replicate the baseline IV–Local Projections**
-
-python computation/replicate_jorda_taylor_IVLP.py
-Run ARIMA selection and the bootstrap procedure
-
-python computation/arima_sanity_and_selection.py
-python computation/ivlp_bootstrap_main.py
-Results and figures are written to the output/ and figures/ folders.
+5. Finally, run `ivlp_bootstrap_main.py` to perform the ARIMA-based bootstrap, generate the empirical χ² distributions, and produce the main tables and bootstrap figure saved in the `output` and `figures` folders.
 
 ---
 
