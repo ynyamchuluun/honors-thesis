@@ -2,6 +2,8 @@
 
 This repository accompanies **Yesui Nyamchuluun’s Honors Thesis (University of Minnesota, 2025)** titled  
 > *“State-Dependent Fiscal Policy Effects: ARIMA-Based Bootstrap Meets Local Projections.”*
+> 
+(Step-by-step replication at the bottom of the file)
 
 The project replicates and extends the econometric framework of **Jordà, Schularick, and Taylor (2020)** (*Journal of Monetary Economics*), translating their Stata-based IV–Local Projection (IV–LP) design into a fully transparent, reproducible **Python implementation**.  
 It introduces an **ARIMA-based bootstrap** procedure to evaluate finite-sample inference robustness in estimating fiscal multipliers across different business-cycle regimes.
@@ -44,6 +46,35 @@ The estimated regression takes the form:
 
 All results are automatically exported to  
 `output/bootstrap_joint_chi2_summary.csv`.
+
+## How to Replicate the Results
+
+1. **Clone the repo and enter the folder**
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
+Set up Python and install dependencies
+Create a virtual environment (optional) and install the required libraries:
+
+2. **Make sure the input data are in place**
+Check that the following files are in the input/ directory:
+
+JSTdatasetR6.dta
+
+dcapb.dta
+
+fiscal_consolidation_v032023.dta
+
+iv_data_corrected.csv
+
+3. **Replicate the baseline IV–Local Projections**
+
+python computation/replicate_jorda_taylor_IVLP.py
+Run ARIMA selection and the bootstrap procedure
+
+python computation/arima_sanity_and_selection.py
+python computation/ivlp_bootstrap_main.py
+Results and figures are written to the output/ and figures/ folders.
 
 ---
 
